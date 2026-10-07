@@ -88,8 +88,14 @@
     <h2>Wofür die Daten verwendet werden</h2>
     <p>
       Ausschließlich, um sie den Betreibern im Dashboard anzuzeigen und daraus Auswertungen zu berechnen, zum Beispiel
-      Vergleiche zwischen den Sprachkanälen. Die Daten werden nicht verkauft, nicht für Werbung genutzt, nicht an
-      Dritte weitergegeben und nicht zum Training von KI-Modellen verwendet.
+      Vergleiche zwischen den Sprachkanälen. Die Daten werden nicht verkauft, nicht für Werbung genutzt und nicht zum
+      Training von KI-Modellen verwendet.
+    </p>
+    <p>
+      An Dritte geht nur eines: Steht bei einem eigenen Video noch der Dateiname als Titel, schickt die App dessen
+      Beschreibung und Dateinamen, den Titel des deutschen Originals und Titel anderer Videos desselben Kanals an
+      OpenAI, um einen passenden Titel vorzuschlagen. Die Betreiber prüfen den Vorschlag und tragen ihn selbst ein.
+      OpenAI verwendet über die API gesendete Daten nach eigenen Angaben nicht zum Training.
     </p>
     <p>
       Die Nutzung von Daten, die die App über Google-APIs erhält, entspricht der
@@ -99,16 +105,17 @@
 
     <h2>Wo die Daten gespeichert werden</h2>
     <p>
-      Nur lokal auf dem Rechner der Betreiber, in einer Datenbankdatei. Es gibt keinen Server und keine Cloud-Speicherung.
+      Nur lokal auf dem Rechner der Betreiber, in einer Datenbankdatei, und in täglichen Sicherungskopien dieser Datei
+      auf demselben Rechner (es bleiben höchstens die letzten sieben). Es gibt keinen Server und keine Cloud-Speicherung.
       Die Zugangsdaten zu Google (Tokens) liegen verschlüsselt, der Schlüssel dazu im Schlüsselbund des Betriebssystems.
     </p>
 
     <h2>Wie lange die Daten gespeichert werden</h2>
     <ul>
-      <li>Öffentliche Daten, die ohne Google-Verbindung geladen werden, höchstens 30 Tage.</li>
+      <li>Öffentliche Daten, die ohne Google-Verbindung geladen werden, höchstens 30 Tage – auch in den Sicherungskopien.</li>
       <li>Daten aus der Google-Verbindung, solange die Verbindung besteht. Die App prüft die Verbindung täglich.</li>
       <li>Beim Trennen der Verbindung in der App werden diese Daten sofort gelöscht, nach einem Widerruf bei Google
-        spätestens nach 7 Tagen.</li>
+        spätestens nach 7 Tagen – jeweils auch aus den Sicherungskopien.</li>
     </ul>
 
     <h2>Zugriff widerrufen</h2>
