@@ -71,7 +71,8 @@
     <ul>
       <li>Kanaldaten und Videos des Kanals, auch private, nicht gelistete und geplante Videos, mit Titel, Beschreibung,
         Tags, Status, Dateiname des Uploads und öffentlichen Zahlen (Aufrufe, Likes, Kommentare),</li>
-      <li>Berichte aus YouTube Analytics und der YouTube Reporting API: Aufrufe, Wiedergabezeit, Abonnenten gewonnen und
+      <li>Berichte aus YouTube Analytics und der YouTube Reporting API: Aufrufe, Wiedergabezeit, durchschnittlich
+        angesehener Anteil, Abonnenten gewonnen und
         verloren, Impressions und Klickrate, Traffic-Quellen, Geräte, Länder sowie Alter und Geschlecht der Zuschauer
         als zusammengefasste Anteile und – nur beim Partnerprogramm-Kanal – geschätzte Umsätze.</li>
     </ul>
@@ -95,10 +96,12 @@
       An Dritte geht nur eines: Für Titel- und Tag-Vorschläge schickt die App Titel, Beschreibung und Dateinamen
       einzelner eigener Videos, den Titel des deutschen Originals und Titel anderer Videos desselben Kanals an Anthropic
       (Claude, über Claude Code) – wenn bei einem Video noch der Dateiname als Titel steht; für eigene lange Videos, die
-      seltener angeklickt werden als im Kanal üblich, samt den anderen Teilen ihrer Serie, damit Claude einen
-      griffigeren Titel vorschlägt; und für neue Uploads sowie eigene Videos ohne Tags, damit Claude passende Tags
-      vorschlägt. Welche Videos das sind, entscheidet die App selbst anhand der Klickrate und der fehlenden Tags; Zahlen
-      aus YouTube Analytics gehen dabei nicht an Anthropic.
+      seltener angeklickt werden als im Kanal üblich, die YouTube kaum zeigt, obwohl die Zuschauer dranbleiben, oder
+      deren Titel ein gesuchtes Wort aus der Beschreibung fehlt, samt den anderen Teilen ihrer Serie, damit Claude einen
+      besseren Titel vorschlägt; und für neue Uploads sowie eigene Videos ohne Tags, damit Claude passende Tags
+      vorschlägt. Welche Videos das sind, entscheidet die App selbst anhand von Klickrate, Impressionen und
+      Zuschauerbindung (wie viel eines Videos im Schnitt angesehen wird) sowie der fehlenden Tags; Zahlen aus YouTube
+      Analytics gehen dabei nicht an Anthropic.
       Die Betreiber prüfen jeden Vorschlag und tragen ihn selbst ein.
       Anfragen laufen über das Abo der Betreiber bei Anthropic; weitere KI-Anbieter erhalten von der App keine Daten.
     </p>
